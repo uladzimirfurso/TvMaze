@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="4.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TvMaze.DataAccess.Domain\TvMaze.DataAccess.Domain.csproj" />
+    <ProjectReference Include="..\TvMaze.DataAccess.Infrastructure\TvMaze.DataAccess.Infrastructure.csproj" />
+    <ProjectReference Include="..\TvMaze.WebApi.Domain\TvMaze.WebApi.Domain.csproj" />
+    <ProjectReference Include="..\TvMaze.WebApi.Infrastructure\TvMaze.WebApi.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
